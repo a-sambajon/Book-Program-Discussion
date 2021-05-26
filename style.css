@@ -1,0 +1,821 @@
+/*..........................................................*/
+/*	        CONSTRUCTOR		                                  */
+/*..........................................................*/
+
+html,
+body {
+  width: 100%;
+  height: 100%; /* Fills the full width and height of the screen */
+  margin: 0; /* Takes off the margin on the page */
+  padding: 0; /* Takes off the space between the text and objects from the page */
+  background-color: #f9f9f9; /* Takes off the space between the text and objects from the page */
+}
+
+/*======== Clearfix ========*/
+.clearfix {
+  clear: both;
+  padding: 2%; /* Creates the space inbetween each sections/divs */
+}
+
+/*======== Background & Foreground Color ========*/
+.custom-color,
+.custom-background-color {
+  background-color: #f3da0b;
+}
+
+/*..........................................................*/
+/*     	          Font Family   	                          */
+/*..........................................................*/
+
+/*======== Open Sans Condensed ========*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700");
+/* font-family: 'Open Sans Condensed', sans-serif; */
+
+/*======== Quicksand ========*/
+@import url("https://fonts.googleapis.com/css?family=Quicksand");
+/* font-family: 'Quicksand', sans-serif; */
+
+/*..........................................................*/
+/*    	    Background Images	                              */
+/*..........................................................*/
+
+/*======== Home background ========*/
+.home-bg {
+  width: 100%; /* Sets image to 100% of the width the screen */
+  height: 100%; /* Sets image to 100% of the height of the screen */
+  margin: auto;
+  background: url(supporting_image.jpg) no-repeat center center fixed; /* Home Background Image */
+  display: table;
+  top: 0; /* Takes away the gap between the top of the page and the image*/
+  background-size: cover; /* Resizes with the web page */
+  opacity: 0.9;
+}
+
+/*======== Image Overlay ========*/
+.bg-overlay {
+  position: absolute;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.2
+  ); /* Colour code to create a black opacity */
+  top: 0;
+  bottom: 0;
+  height: 100%; /* Full height of the page */
+  width: 100%; /* Full width of the page */
+  z-index: -5; /* To stack over the Background Image */
+}
+
+/*..........................................................*/
+/*    	    Background Content	                            */
+/*..........................................................*/
+
+/*======== Home Header Content ========*/
+.content-box {
+  background-color: transparent; /* Makes the box transparent*/
+  position: absolute;
+  width: 500px;
+  height: 150px;
+  top: 45%; /* Distance from the top */
+  left: 50%; /* To center the box */
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); /* Resizes appropriately to the web page */
+}
+.content-box h1 {
+  color: #f9f9f9;
+  font-weight: 500;
+  font-family: "Quicksand", sans-serif;
+  text-align: center; /* Centers the text */
+  font-size: 69px;
+  margin-bottom: 60px;
+  font-weight: 500;
+}
+.content-box p {
+  line-height: 0px;
+  color: #f9f9f9;
+  font-family: "Quicksand", sans-serif;
+  text-align: center; /* Centers the text */
+  font-weight: 100;
+  font-size: 18px;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+}
+.content-box hr {
+  display: block;
+  margin-top: 0.5em; /* Space from the top*/
+  margin-bottom: 0.5em; /* Space at the bottom */
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+  width: 20%;
+}
+
+/*..........................................................*/
+/*	        Navigation Bar 	       	                        */
+/*..........................................................*/
+
+header {
+  background-color: white; /* Creates a transparent background for the navbar */
+  height: 140px;
+  position: relative;
+  z-index: 1000;
+  overflow: visible;
+  width: 100%; /* Sets the navigation bar 100% width of the page */
+  top: 0;
+}
+/*======== Logo ========*/
+#logo img {
+  padding-top: 30px; /* Space between the top */
+  padding-left: 50px; /* Space between the left */
+  float: left;
+  width: 275px;
+  height: 250px;
+}
+/*======== Navigation bar ========*/
+nav {
+  float: right;
+}
+nav ul {
+  list-style: none;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  padding-top: 70px;
+}
+nav ul li {
+  font-family: sans-serif;
+  position: relative;
+  list-style-type: none; /* Corrects the order of the links */
+  padding-right: 50px;
+  display: inline;
+}
+nav ul li a {
+  font-family: "Quicksand", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none; /* Takes away the decoration */
+  color: black;
+  transition: all ease 0.5s; /* Ease effect helps with the Javascript */
+}
+nav ul li a:hover {
+  background-color: #f3da0b;
+  padding: 70px;
+}
+
+/*..........................................................*/
+/*	  Main Section Properties                               */
+/*..........................................................*/
+
+.home-about {
+  background-color: black;
+}
+/*======== Inner Wrapper ========*/
+#inner-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+#inner-wrapper h1,
+h2,
+p {
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+}
+
+#inner-wrapper h1 {
+  font-size: 80px;
+}
+
+#inner-wrapper p {
+  color: #636363;
+}
+#inner-wrapper hr {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+  width: 7%;
+}
+/*======== Staff Columns ========*/
+#staff-columns .one-third {
+  width: 30%;
+  float: left;
+  margin: 1%;
+  padding-bottom: 50px;
+}
+#staff-columns .one-third i {
+  color: #f0f0f0;
+  font-size: 555%;
+  padding: 20%;
+}
+#staff-columns .one-third p {
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  text-transform: none;
+  font-size: 100%;
+  padding: 2%;
+  margin-top: 30px;
+  margin-bottom: 0px;
+  color: #636363;
+}
+#staff-columns .one-third h1 {
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 60px;
+}
+.one-third img {
+  margin-top: 3%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 250px;
+  max-height: 250px;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%; /* Creates the circle shape around the square image */
+}
+#staff-columns .one-third hr {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+  width: 40%;
+}
+/*======== Social Media Icons ========*/
+#icons {
+  padding-left: 22%;
+}
+#icons img {
+  width: 40px;
+  height: 40px;
+  float: left;
+  display: block;
+  padding: 5px;
+  filter: grayscale(100%);
+  transition: filter 400ms ease;
+}
+#icons img:hover {
+  filter: grayscale(0%);
+}
+
+/*..........................................................*/
+/*	    Home About Content                                  */
+/*..........................................................*/
+
+/*======== Home Parallax ========*/
+.home-parallax {
+  width: 100%;
+  height: 60%;
+  margin: auto;
+  background: url(about_bg.jpg) no-repeat center center fixed; /* Home Background Image */
+  background-size: cover; /* Resizes with the web page */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    1
+  ); /* Colour code to create a black opacity */
+}
+
+/*======== Home About Content ========*/
+#something {
+  font-size: 20px;
+  letter-spacing: 6px;
+}
+.home-about-content {
+  max-width: 600px;
+  width: 64%;
+  padding-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.home-about-content p {
+  font-size: 20px;
+  line-height: 1.5;
+}
+.home-about-content h1 {
+  font-size: 40px;
+  letter-spacing: 6px;
+}
+.home-about-content p,
+.home-about-content h1 {
+  margin-bottom: 0px;
+  text-align: center;
+  color: white;
+}
+.home-about-content h1 {
+  margin-bottom: 20px;
+  margin-top: 5px;
+  font-family: "Quicksand", sans-serif;
+  color: white;
+}
+#home-about-button a {
+  text-decoration: none;
+}
+#home-about-button p {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 50px;
+  border-style: solid; /* Creates the border line for the box */
+  margin-left: auto; /* Centers the text */
+  margin-right: auto; /* Centers the text */
+  padding: 10px;
+  height: 50px;
+  width: 40%;
+  border-width: 2px;
+  color: white;
+  transition: all ease 0.3s; /* Ease effect helps with the Javascript */
+}
+/*======== Home About Button ========*/
+#home-about-button p:hover {
+  background-color: #f3da0b;
+  color: black;
+  border-color: #f3da0b;
+}
+
+/*..........................................................*/
+/*     	           News Grid	                              */
+/*..........................................................*/
+
+/*======== Grid for Home News ========*/
+.grid {
+  margin: 0 0 0 0;
+  padding: 0;
+  list-style: none;
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+.grid li {
+  width: 350px;
+  height: 650px;
+  display: inline-block;
+}
+/*======== News Boxes ========*/
+.box {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out, -moz-transform 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.box:hover {
+  opacity: 0.9;
+}
+/*======== Image Property for Grid ========*/
+.img {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)),
+    /*overlay to help see the text */ url(news.jpeg) center center fixed;
+}
+/*======== Content ========*/
+.info {
+  position: absolute;
+  width: inherit;
+  height: inherit;
+}
+
+.info h3 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  color: white;
+  font-size: 25px;
+  margin: 0 30px;
+  padding: 80px 0 0 0;
+  line-height: 1.5;
+}
+
+.info p {
+  font-family: "Quicksand", sans-serif;
+  padding: 50px 0 0 0;
+  font-size: 20px;
+  margin: 0 30px;
+  line-height: 1.5;
+}
+
+.info a {
+  font-family: "Quicksand", sans-serif;
+  padding: 20px 0 0 0;
+  font-size: 14px;
+  margin: 0 30px;
+  line-height: 2;
+}
+
+/*======== Grid for Books ========*/
+.activities-grid {
+  margin: 20px 0 0 0;
+  padding: 0;
+  list-style: none;
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+.activities-grid li {
+  width: 90%;
+  height: 328px;
+  display: inline-block;
+  margin: 20px;
+}
+/*======== Box for Books ========*/
+.activities-box {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  cursor: pointer;
+  border-radius: 10px;
+  -webkit-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out, -moz-transform 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.activities-box:hover {
+  transform: scale(1.1);
+}
+/*======== Images for Books ========*/
+.activities-img-1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),
+    url(education.jpeg) no-repeat center center fixed;
+  width: 100%; /* Sets image to 100% of the width the screen */
+  height: 100%; /* Sets image to 100% of the height of the screen */
+  background-size: cover; /* Resizes with the web page */
+}
+
+.activities-img-2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),
+    url(sports.jpeg) no-repeat center center fixed;
+  width: 100%; /* Sets image to 100% of the width the screen */
+  height: 100%; /* Sets image to 100% of the height of the screen */
+  background-size: cover; /* Resizes with the web page */
+}
+
+.activities-img-3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),
+    url(arts.jpeg) no-repeat center center fixed;
+  width: 100%; /* Sets image to 100% of the width the screen */
+  height: 100%; /* Sets image to 100% of the height of the screen */
+  background-size: cover; /* Resizes with the web page */
+}
+
+.activities-img-4 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),
+    url(performance.jpeg) no-repeat center center fixed;
+  width: 100%; /* Sets image to 100% of the width the screen */
+  height: 100%; /* Sets image to 100% of the height of the screen */
+  background-size: cover; /* Resizes with the web page */
+}
+
+.activities-img-5 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),
+    url(religion.jpeg) no-repeat center center fixed;
+  width: 100%; /* Sets image to 100% of the width the screen */
+  height: 100%; /* Sets image to 100% of the height of the screen */
+  background-size: cover; /* Resizes with the web page */
+}
+.activities-img-6 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),
+    url(hospitality.jpeg) no-repeat center center fixed;
+  width: 100%; /* Sets image to 100% of the width the screen */
+  height: 100%; /* Sets image to 100% of the height of the screen */
+  background-size: cover; /* Resizes with the web page */
+}
+
+/*..........................................................*/
+/*          Footer Content and Form	                        */
+/*..........................................................*/
+
+.contact {
+  background-color: #1a1a1a;
+  padding: 0;
+  display: inline-block;
+  width: 100%;
+}
+/*======== Contact Wrapper ========*/
+#contact-wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+#contact-wrapper h1,
+#contact-wrapper p {
+  text-align: center;
+  color: white;
+  font-family: "Quicksand", sans-serif;
+}
+#contact-wrapper h1 {
+  font-size: 40px;
+}
+#contact-wrapper p {
+  color: #aaaaaa;
+}
+#contact-wrapper hr {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+  width: 7%;
+}
+/*======== Logo ========*/
+#logo-2 img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  height: 40%;
+  display: block;
+  filter: grayscale(100%);
+  transition: filter 400ms ease;
+}
+#logo-2 img:hover {
+  filter: grayscale(0%);
+  transition: filter 400ms ease;
+}
+#contact-header {
+  margin-top: 7%;
+}
+/*======== Contact Section Content ========*/
+.contact-section {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.contact-section #contact-content {
+  margin-top: 80px;
+  display: block;
+  float: left;
+  width: 30%;
+  margin: 5%;
+  border-radius: 5px;
+  background-color: #1a1a1a;
+}
+.contact-section #contact-content p,
+.contact-section #contact-content h1 {
+  text-align: left;
+}
+.contact-section #contact-content hr {
+  margin-top: 40px;
+  display: block;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+  width: 25%;
+}
+.contact-section #contact-content #contact-info-content {
+  margin-left: 10%;
+}
+.contact-section #contact-content #contact-info-content p img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  filter: grayscale(40%);
+}
+.contact-section #contact-content #icons {
+  padding-left: 10%;
+}
+.contact-section #contact-content #icons img {
+  width: 50px;
+  height: 50px;
+  float: left;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding: 10px;
+  filter: grayscale(100%);
+  transition: filter 400ms ease;
+}
+.contact-section #contact-content #icons img:hover {
+  filter: grayscale(0%);
+  transition: filter 400ms ease;
+}
+/*======== Form Style ========*/
+#form {
+  display: block;
+  float: left;
+  width: 48%;
+  margin: 2%;
+  margin-left: 8%;
+  border-radius: 5px;
+  background-color: #1a1a1a;
+  margin-bottom: 5%;
+  padding-top: 50px;
+}
+input[type="text"],
+input[type="password"] {
+  font-size: 14px;
+  font-family: "Quicksand", sans-serif;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #7a7a7a;
+  border-radius: 6px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border: 1px solid #f3da0b;
+}
+textarea {
+  font-family: "Quicksand", sans-serif;
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 1px solid #444343;
+  border-radius: 3px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  font-size: 14px;
+  resize: none;
+}
+textarea:focus {
+  border: 1px solid #f3da0b;
+}
+/*======== Submit Button ========*/
+input[type="submit"] {
+  width: 100%;
+  font-size: 14px;
+  font-family: "Quicksand", sans-serif;
+  background-color: #f3da0b;
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: #f3dc0bb9;
+}
+#fname,
+#lname {
+  width: 50%;
+  float: left;
+  display: block;
+}
+/*======== Form Content ========*/
+#form h1 {
+  text-align: center;
+  color: white;
+  font-size: 17px;
+  font-family: "Quicksand", sans-serif;
+}
+#form p {
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  font-family: "Quicksand", sans-serif;
+}
+#form hr {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+  width: 23%;
+}
+/*======== Copyright ========*/
+.copyright {
+  background-color: black;
+  width: 100%;
+  margin-top: -4px;
+  display: inline-block;
+  top: 0;
+}
+.copyright h1 {
+  color: #f3da0b;
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
+  padding: 10px;
+}
+
+/*..........................................................*/
+/*	  Login and Registration   	*/
+/*..........................................................*/
+
+/*======== Logo ========*/
+
+.center-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+/*======== Form ========*/
+* {
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  font-size: 14px;
+  font-family: "Quicksand", sans-serif;
+  background-color: #f3da0b;
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #f3dc0bb9;
+}
+
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+.cancelbtn,
+.signupbtn {
+  float: left;
+  width: 100%;
+}
+
+.container-form {
+  padding-right: 15%;
+  padding-left: 15%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.container-form h3 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  color: black;
+  font-size: 40px;
+  margin: 0 30px;
+  text-align: center;
+  padding: 20px;
+  line-height: 1.5;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #00000075;
+  padding-top: 50px;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto;
+  border: 1px solid #888;
+  width: 60%;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 80px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f3da0b;
+  cursor: pointer;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
